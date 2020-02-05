@@ -52,7 +52,7 @@ Please Login</string>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment>
-                                            <string key="content">You're new to Travelmate?
+                                            <string key="content">You're new to Travelmate_0_2?
  Please signup</string>
                                             <attributes>
                                                 <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
