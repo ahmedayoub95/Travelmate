@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Travelmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@ Please Login</string>
         <!--Sign Up View Controller-->
         <scene sceneID="rOj-M3-OwI">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cxq-Ng-7tK" customClass="SignUpViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cxq-Ng-7tK" customClass="SignUpViewController" customModule="Travelmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbi-x3-qQc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,7 +302,7 @@ Please Login</string>
         <!--Login-->
         <scene sceneID="hUa-le-q5h">
             <objects>
-                <viewController title="Login" modalPresentationStyle="fullScreen" id="dSR-wV-Pbk" customClass="LoginViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" modalPresentationStyle="fullScreen" id="dSR-wV-Pbk" customClass="LoginViewController" customModule="Travelmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="57R-Dk-YZL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,7 +484,7 @@ Please Login</string>
         <!--Dashboard-->
         <scene sceneID="cZq-aA-OQg">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="UoZ-WV-wFr" customClass="DashboardViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="UoZ-WV-wFr" customClass="DashboardViewController" customModule="Travelmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kGE-0p-TZB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -574,7 +574,7 @@ Please Login</string>
         <!--Map-->
         <scene sceneID="JWk-Ic-yRH">
             <objects>
-                <viewController title="Map" modalPresentationStyle="fullScreen" id="5fa-Pc-cDT" customClass="MapViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" modalPresentationStyle="fullScreen" id="5fa-Pc-cDT" customClass="MapViewController" customModule="Travelmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NuP-5L-8Qi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

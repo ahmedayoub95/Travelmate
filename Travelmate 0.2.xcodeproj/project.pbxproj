@@ -51,7 +51,7 @@
 		6DB16943E34BA7F797B63C05 /* Pods-Travelmate 0.2-Travelmate 0.2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelmate 0.2-Travelmate 0.2UITests.release.xcconfig"; path = "Target Support Files/Pods-Travelmate 0.2-Travelmate 0.2UITests/Pods-Travelmate 0.2-Travelmate 0.2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		7C33364FC686126BF5656566 /* Pods-Travelmate 0.2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelmate 0.2.release.xcconfig"; path = "Target Support Files/Pods-Travelmate 0.2/Pods-Travelmate 0.2.release.xcconfig"; sourceTree = "<group>"; };
 		90209D467382B60958875C31 /* Pods-Travelmate 0.2-Travelmate 0.2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelmate 0.2-Travelmate 0.2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Travelmate 0.2-Travelmate 0.2UITests/Pods-Travelmate 0.2-Travelmate 0.2UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		946113D323341013007B1692 /* Travelmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		946113D323341013007B1692 /* Travelmate 0.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travelmate 0.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		946113D623341013007B1692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		946113D823341013007B1692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		946113DB23341013007B1692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		946113D423341013007B1692 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				946113D323341013007B1692 /* Travelmate.app */,
+				946113D323341013007B1692 /* Travelmate 0.2.app */,
 				946113E723341013007B1692 /* Travelmate 0.2Tests.xctest */,
 				946113F223341013007B1692 /* Travelmate 0.2UITests.xctest */,
 			);
@@ -219,7 +219,7 @@
 			);
 			name = "Travelmate 0.2";
 			productName = "Travelmate 0.2";
-			productReference = 946113D323341013007B1692 /* Travelmate.app */;
+			productReference = 946113D323341013007B1692 /* Travelmate 0.2.app */;
 			productType = "com.apple.product-type.application";
 		};
 		946113E623341013007B1692 /* Travelmate 0.2Tests */ = {
@@ -635,7 +635,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "saamify.Travelmate-0-2";
-				PRODUCT_NAME = Travelmate;
+				PRODUCT_NAME = "Travelmate 0.2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -656,7 +656,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "saamify.Travelmate-0-2";
-				PRODUCT_NAME = Travelmate;
+				PRODUCT_NAME = "Travelmate 0.2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
