@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>233481499086-hsgsnv0pp9v4g0buf8apick3d0llq2ar.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.233481499086-hsgsnv0pp9v4g0buf8apick3d0llq2ar</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBg3op17_G_i5quUj0LEDZQVm8C15UG65k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>233481499086</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>saamify.Travelmate-0-2</string>
+	<key>PROJECT_ID</key>
+	<string>travelmate-4a240</string>
+	<key>STORAGE_BUCKET</key>
+	<string>travelmate-4a240.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:233481499086:ios:240852dfae959d729e3b9f</string>
+	<key>DATABASE_URL</key>
+	<string>https://travelmate-4a240.firebaseio.com</string>
+</dict>
+</plist>
