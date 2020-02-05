@@ -67,10 +67,6 @@ Please Login</string>
                                     <segue destination="cxq-Ng-7tK" kind="show" id="vgQ-3R-45D"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-G7-ZcU">
-                                <rect key="frame" x="202" y="450" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -633,7 +629,7 @@ Please Login</string>
         <image name="seperator" width="112" height="7"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MlC-Jm-pLB"/>
-        <segue reference="TRE-1X-klr"/>
+        <segue reference="0Er-P8-zEc"/>
+        <segue reference="vgQ-3R-45D"/>
     </inferredMetricsTieBreakers>
 </document>
