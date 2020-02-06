@@ -13,7 +13,7 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        joinButtonOutlet.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }
     
@@ -24,6 +24,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet var confirmpasswordTextField: UITextField!
 
     
+    @IBOutlet weak var joinButtonOutlet: UIButton!
     
     @IBAction func SignUpButton(_ sender: UIButton) {
         // create a new user in your database

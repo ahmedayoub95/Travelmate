@@ -85,11 +85,11 @@ Please Login</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login background image" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-lK-axw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login background image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-lK-axw">
+                                <rect key="frame" x="0.0" y="0.0" width="417" height="812"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="acy-5M-TTJ">
-                                <rect key="frame" x="25" y="650" width="363" height="8"/>
+                                <rect key="frame" x="25" y="650" width="366" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="eSr-DD-iYp"/>
@@ -114,7 +114,7 @@ Please Login</string>
                                 </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="lZN-tT-Gk4">
-                                <rect key="frame" x="28" y="395" width="366" height="8"/>
+                                <rect key="frame" x="28" y="395" width="361" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="dwt-ma-qpe"/>
@@ -130,13 +130,6 @@ Please Login</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="8HY-tS-jKz">
-                                <rect key="frame" x="28" y="459" width="363" height="8"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="8" id="KVz-Jh-snE"/>
-                                </constraints>
-                            </imageView>
                             <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" id="X77-61-CuQ">
                                 <rect key="frame" x="28" y="488" width="362" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -148,7 +141,7 @@ Please Login</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="TzP-PU-kjm">
-                                <rect key="frame" x="26" y="521" width="363" height="8"/>
+                                <rect key="frame" x="26" y="521" width="364" height="8"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="CMg-Kf-9dV"/>
                                 </constraints>
@@ -171,7 +164,7 @@ Please Login</string>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="R7j-DC-HEG">
-                                <rect key="frame" x="25" y="586" width="363" height="8"/>
+                                <rect key="frame" x="25" y="586" width="365" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="E8C-Jc-xjw"/>
@@ -197,10 +190,14 @@ Please Login</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urR-zy-Uwv">
-                                <rect key="frame" x="348" y="671" width="46" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Join"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="urR-zy-Uwv">
+                                <rect key="frame" x="286" y="682" width="105" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5450980392" green="0.21176470589999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="20"/>
+                                <state key="normal" title="Join">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="SignUpButton:" destination="cxq-Ng-7tK" eventType="touchUpInside" id="Oc9-cl-dg7"/>
                                 </connections>
@@ -208,7 +205,7 @@ Please Login</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nK0-LA-NjL">
                                 <rect key="frame" x="251" y="745" width="54" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
                                 <state key="normal" title="Log in!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -217,7 +214,7 @@ Please Login</string>
                                 </connections>
                             </button>
                             <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" id="e3A-hf-QKY">
-                                <rect key="frame" x="105" y="752" width="138" height="22"/>
+                                <rect key="frame" x="92" y="752" width="151" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.90000000000000002" height="1"/>
                                 <constraints>
@@ -227,12 +224,19 @@ Please Login</string>
                                     <fragment content="Already a Member?">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="15" name="AvenirNext-Medium"/>
+                                            <font key="NSFont" size="19" name="GillSans"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="8HY-tS-jKz">
+                                <rect key="frame" x="29" y="458" width="361" height="8"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="KVz-Jh-snE"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -290,6 +294,7 @@ Please Login</string>
                         <outlet property="FullNameTextFeild" destination="oaY-MG-wDF" id="MSu-8Y-zeH"/>
                         <outlet property="confirmpasswordTextField" destination="0xY-QR-gIo" id="82G-VB-yyC"/>
                         <outlet property="emailTextField" destination="Q1m-em-jsL" id="hc4-zJ-38D"/>
+                        <outlet property="joinButtonOutlet" destination="urR-zy-Uwv" id="gHW-ac-NoT"/>
                         <outlet property="passwordTextField" destination="T3j-yY-cyt" id="Lb1-ma-DCT"/>
                         <outlet property="phoneTextField" destination="X77-61-CuQ" id="JwS-h1-MvA"/>
                     </connections>
@@ -303,67 +308,49 @@ Please Login</string>
         <scene sceneID="hUa-le-q5h">
             <objects>
                 <viewController title="Login" modalPresentationStyle="fullScreen" id="dSR-wV-Pbk" customClass="LoginViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="57R-Dk-YZL">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="57R-Dk-YZL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Group 5" translatesAutoresizingMaskIntoConstraints="NO" id="idM-5Q-e8a">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login background image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7p-VT-gbi">
+                                <rect key="frame" x="-1" y="0.0" width="417" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="DpM-BQ-1KP">
-                                <rect key="frame" x="52" y="714" width="310" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="RZN-bC-new"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="8sE-Xe-aJW">
+                                <rect key="frame" x="35" y="482" width="344" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="8sE-Xe-aJW">
-                                <rect key="frame" x="35" y="417" width="344" height="24"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PUN-hO-ZAL">
-                                <rect key="frame" x="35" y="385" width="344" height="43"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="PUN-hO-ZAL">
+                                <rect key="frame" x="35" y="451" width="344" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="5tV-go-atW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="k6q-Ql-5X9">
-                                <rect key="frame" x="73.5" y="201" width="267" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="k6q-Ql-5X9">
+                                <rect key="frame" x="60" y="164" width="296" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="XQY-d5-nvd"/>
                                     <constraint firstAttribute="width" constant="267" id="rdm-Aa-8th"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="LY5-CE-YCG">
-                                <rect key="frame" x="35" y="374" width="344" height="12"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="LY5-CE-YCG">
+                                <rect key="frame" x="35" y="431" width="344" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password? Click Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPF-sF-dyZ">
-                                <rect key="frame" x="174" y="570" width="224" height="24"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password? Click Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JPF-sF-dyZ">
+                                <rect key="frame" x="95" y="663" width="224" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 4" translatesAutoresizingMaskIntoConstraints="NO" id="5T7-u6-2RW">
-                                <rect key="frame" x="52" y="658" width="310" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="8PS-tx-q8f"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbA-3e-Zj0">
-                                <rect key="frame" x="48" y="832" width="258" height="24"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Don't Have an Account?">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="17" name="Avenir-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFF-0f-KYY">
-                                <rect key="frame" x="35" y="351" width="344" height="26"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" id="YFF-0f-KYY">
+                                <rect key="frame" x="35" y="406" width="344" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="5dR-8y-5yr"/>
                                     <constraint firstAttribute="width" constant="344" id="wBH-eA-jWo"/>
@@ -372,10 +359,10 @@ Please Login</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9b-no-Eyu">
-                                <rect key="frame" x="273" y="821" width="89" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G9b-no-Eyu">
+                                <rect key="frame" x="324" y="740" width="64" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
                                 <state key="normal" title="Sign Up!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -383,19 +370,37 @@ Please Login</string>
                                     <segue destination="cxq-Ng-7tK" kind="show" identifier="goToSignUp" id="TRE-1X-klr"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="seperator" highlightedImage="seperator" translatesAutoresizingMaskIntoConstraints="NO" id="lmQ-Wy-Xeh">
-                                <rect key="frame" x="105" y="518" width="224" height="39"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvv-zX-ixb">
-                                <rect key="frame" x="308" y="449" width="54" height="37"/>
-                                <state key="normal" title="LOGIN">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="Qvv-zX-ixb">
+                                <rect key="frame" x="150" y="551" width="114" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5450980392" green="0.21176470589999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="21"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="SignInPressed:" destination="dSR-wV-Pbk" eventType="touchUpInside" id="cZM-ik-tqJ"/>
                                     <segue destination="O2e-Ax-BKH" kind="show" identifier="goToTabBarController" id="7w4-cW-mvw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hbA-3e-Zj0">
+                                <rect key="frame" x="-14" y="743" width="258" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Don't Have an Account?">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="19" name="GillSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icon_plane" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-Jx-5yK">
+                                <rect key="frame" x="247" y="740" width="40" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -404,47 +409,33 @@ Please Login</string>
                             <constraint firstItem="LY5-CE-YCG" firstAttribute="top" secondItem="k6q-Ql-5X9" secondAttribute="bottom" constant="28" id="50P-tP-fdB"/>
                             <constraint firstAttribute="bottom" secondItem="JPF-sF-dyZ" secondAttribute="bottom" constant="302" id="5el-nx-uhx"/>
                             <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="8sE-Xe-aJW" secondAttribute="centerX" id="5gL-VJ-M6K"/>
-                            <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="5T7-u6-2RW" secondAttribute="centerX" id="5tI-sF-cYI"/>
                             <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="YFF-0f-KYY" secondAttribute="centerX" id="9VV-bB-1ZW"/>
-                            <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="idM-5Q-e8a" secondAttribute="centerX" id="BDJ-1L-evE"/>
                             <constraint firstItem="Qvv-zX-ixb" firstAttribute="top" secondItem="PUN-hO-ZAL" secondAttribute="bottom" constant="21" id="Bcw-gc-gvQ"/>
-                            <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="lmQ-Wy-Xeh" secondAttribute="centerX" constant="-3" id="Cjd-PY-b0G"/>
                             <constraint firstItem="JPF-sF-dyZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qW5-uo-RL7" secondAttribute="leading" id="KaF-ok-6M1"/>
                             <constraint firstItem="hbA-3e-Zj0" firstAttribute="leading" secondItem="qW5-uo-RL7" secondAttribute="leading" constant="88" id="PIu-jv-InG"/>
-                            <constraint firstItem="5T7-u6-2RW" firstAttribute="leading" secondItem="DpM-BQ-1KP" secondAttribute="leading" id="Q0A-LE-7IR"/>
-                            <constraint firstItem="DpM-BQ-1KP" firstAttribute="top" secondItem="lmQ-Wy-Xeh" secondAttribute="bottom" constant="127" id="RR2-c1-pwl"/>
-                            <constraint firstItem="idM-5Q-e8a" firstAttribute="leading" secondItem="qW5-uo-RL7" secondAttribute="leading" id="RXK-sq-kDQ"/>
-                            <constraint firstItem="5T7-u6-2RW" firstAttribute="top" secondItem="lmQ-Wy-Xeh" secondAttribute="bottom" constant="71" id="S12-S5-EbU"/>
-                            <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="DpM-BQ-1KP" secondAttribute="centerX" id="Su1-A6-Ci6"/>
                             <constraint firstItem="PUN-hO-ZAL" firstAttribute="top" secondItem="LY5-CE-YCG" secondAttribute="bottom" constant="-1" id="Tj9-uG-oAh"/>
                             <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="LY5-CE-YCG" secondAttribute="centerX" id="VqR-Gm-Ngo"/>
                             <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="PUN-hO-ZAL" secondAttribute="centerX" id="Wr8-j2-mRT"/>
                             <constraint firstItem="k6q-Ql-5X9" firstAttribute="top" secondItem="qW5-uo-RL7" secondAttribute="top" constant="157" id="ail-ja-W1n"/>
                             <constraint firstItem="JPF-sF-dyZ" firstAttribute="top" secondItem="Qvv-zX-ixb" secondAttribute="bottom" constant="17" id="byo-hg-b0a"/>
                             <constraint firstItem="qW5-uo-RL7" firstAttribute="trailing" secondItem="JPF-sF-dyZ" secondAttribute="trailing" constant="16" id="fiF-6h-KYk"/>
-                            <constraint firstAttribute="bottom" secondItem="5T7-u6-2RW" secondAttribute="bottom" constant="179" id="kH5-yp-iGj"/>
-                            <constraint firstItem="lmQ-Wy-Xeh" firstAttribute="top" secondItem="JPF-sF-dyZ" secondAttribute="bottom" constant="-46" id="kOC-tE-j3W"/>
-                            <constraint firstItem="hbA-3e-Zj0" firstAttribute="top" secondItem="DpM-BQ-1KP" secondAttribute="bottom" constant="41" id="kXS-r6-Ogx"/>
                             <constraint firstItem="PUN-hO-ZAL" firstAttribute="trailing" secondItem="Qvv-zX-ixb" secondAttribute="trailing" id="l12-ua-vlR"/>
                             <constraint firstItem="qW5-uo-RL7" firstAttribute="trailing" secondItem="hbA-3e-Zj0" secondAttribute="trailing" constant="68" id="lzm-IG-e3A"/>
                             <constraint firstItem="PUN-hO-ZAL" firstAttribute="leading" secondItem="YFF-0f-KYY" secondAttribute="leading" id="nQB-hN-6zF"/>
-                            <constraint firstItem="5T7-u6-2RW" firstAttribute="leading" secondItem="qW5-uo-RL7" secondAttribute="leading" constant="52" id="oHt-lS-aEy"/>
                             <constraint firstItem="PUN-hO-ZAL" firstAttribute="top" secondItem="57R-Dk-YZL" secondAttribute="top" constant="385" id="pHa-Gw-JlW"/>
                             <constraint firstItem="PUN-hO-ZAL" firstAttribute="leading" secondItem="LY5-CE-YCG" secondAttribute="leading" id="sCf-Bg-FV7"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="idM-5Q-e8a" secondAttribute="bottom" constant="-88" id="sYy-fn-lus"/>
                             <constraint firstItem="PUN-hO-ZAL" firstAttribute="leading" secondItem="qW5-uo-RL7" secondAttribute="leading" constant="35" id="tVa-rX-cAW"/>
                             <constraint firstItem="PUN-hO-ZAL" firstAttribute="leading" secondItem="8sE-Xe-aJW" secondAttribute="leading" id="vdf-wC-iXc"/>
-                            <constraint firstItem="idM-5Q-e8a" firstAttribute="top" secondItem="qW5-uo-RL7" secondAttribute="top" constant="-44" id="w5v-vP-tuO"/>
                             <constraint firstItem="k6q-Ql-5X9" firstAttribute="centerX" secondItem="57R-Dk-YZL" secondAttribute="centerX" id="waZ-Iq-Wwp"/>
                             <constraint firstItem="8sE-Xe-aJW" firstAttribute="top" secondItem="LY5-CE-YCG" secondAttribute="bottom" constant="31" id="wc9-wE-SGw"/>
                             <constraint firstItem="qW5-uo-RL7" firstAttribute="bottom" secondItem="hbA-3e-Zj0" secondAttribute="bottom" constant="6" id="y00-qk-5w8"/>
-                            <constraint firstItem="lmQ-Wy-Xeh" firstAttribute="leading" secondItem="qW5-uo-RL7" secondAttribute="leading" constant="98" id="yE6-aw-94V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qW5-uo-RL7"/>
                     </view>
                     <navigationItem key="navigationItem" id="IXm-L9-fpa"/>
                     <connections>
                         <outlet property="emailTextField" destination="YFF-0f-KYY" id="sxH-36-26y"/>
+                        <outlet property="loginButtonOutlet" destination="Qvv-zX-ixb" id="kGA-Rh-8ik"/>
                         <outlet property="passwordTextField" destination="PUN-hO-ZAL" id="MU6-jG-cAD"/>
                     </connections>
                 </viewController>
@@ -617,16 +608,13 @@ Please Login</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Group 3" width="319" height="43"/>
-        <image name="Group 4" width="106.5" height="14.5"/>
-        <image name="Group 5" width="152.5" height="271"/>
         <image name="Line 1" width="112" height="1"/>
+        <image name="icon_plane" width="40" height="33"/>
         <image name="location.fill" catalog="system" width="64" height="56"/>
         <image name="login background image" width="457" height="812"/>
         <image name="logo" width="73" height="49"/>
         <image name="message.fill" catalog="system" width="64" height="56"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
-        <image name="seperator" width="112" height="7"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MlC-Jm-pLB"/>
