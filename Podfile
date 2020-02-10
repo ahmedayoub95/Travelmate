@@ -16,6 +16,9 @@ target 'Travelmate 0.2' do
   pod 'Firebase/Analytics'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
+  pod 'FirebaseFirestoreSwift'
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
   target 'Travelmate 0.2Tests' do
