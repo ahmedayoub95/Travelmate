@@ -8,12 +8,18 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
+       var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         joinButtonOutlet.layer.cornerRadius = 15
+      
+        ref = Database.database().reference()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -22,6 +28,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet var phoneTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var confirmpasswordTextField: UITextField!
+    
+ 
 
     
     @IBOutlet weak var joinButtonOutlet: UIButton!
@@ -36,6 +44,7 @@ class SignUpViewController: UIViewController {
                 print("Successfully Registered")
             }
                    }
+      //  ref?.child("users").childByAutoId().child("Phone").setValue(phoneTextField.text)
         
     }
     

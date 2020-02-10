@@ -18,6 +18,7 @@
 		946113EC23341013007B1692 /* Travelmate_0_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946113EB23341013007B1692 /* Travelmate_0_2Tests.swift */; };
 		946113F723341013007B1692 /* Travelmate_0_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946113F623341013007B1692 /* Travelmate_0_2UITests.swift */; };
 		94B8FF2923394707007998C0 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 94B8FF2823394707007998C0 /* video1.mp4 */; };
+		FA1CE8D723EDB737005197AA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1CE8D623EDB737005197AA /* ExternalAccessory.framework */; };
 		FA315BB423DC354400956450 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BB323DC354400956450 /* MapViewController.swift */; };
 		FA315BB823DCF2B100956450 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA315BB723DCF2B100956450 /* GoogleService-Info.plist */; };
 		FA315BBA23DDBC0300956450 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BB923DDBC0300956450 /* SignUpViewController.swift */; };
@@ -68,6 +69,7 @@
 		C17B0B094436FFA8D98A7406 /* Pods-Travelmate 0.2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelmate 0.2Tests.release.xcconfig"; path = "Target Support Files/Pods-Travelmate 0.2Tests/Pods-Travelmate 0.2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C73FE3EAEBDD9FB6E052808E /* Pods_Travelmate_0_2_Travelmate_0_2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travelmate_0_2_Travelmate_0_2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62A0DFD14E1901ED1851D6A /* Pods_Travelmate_0_2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travelmate_0_2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1CE8D623EDB737005197AA /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		FA315BB323DC354400956450 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA315BB723DCF2B100956450 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA315BB923DDBC0300956450 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1CE8D723EDB737005197AA /* ExternalAccessory.framework in Frameworks */,
 				FA8DECF323DB9D35005882D0 /* MapKit.framework in Frameworks */,
 				5F57A1D0F5856777E8A745D9 /* Pods_Travelmate_0_2.framework in Frameworks */,
 			);
@@ -192,6 +195,7 @@
 		FA8DECF123DB9D35005882D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA1CE8D623EDB737005197AA /* ExternalAccessory.framework */,
 				FA8DECF223DB9D35005882D0 /* MapKit.framework */,
 				3F210FAB8EA3B1D3558D94D7 /* Pods_Travelmate_0_2.framework */,
 				C73FE3EAEBDD9FB6E052808E /* Pods_Travelmate_0_2_Travelmate_0_2UITests.framework */,
@@ -627,7 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2LDC9EN46;
+				DEVELOPMENT_TEAM = 498DPLG3BQ;
 				INFOPLIST_FILE = "Travelmate 0.2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -647,8 +651,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Travelmate 0.2/Travelmate 0.2Release.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M2LDC9EN46;
+				DEVELOPMENT_TEAM = 498DPLG3BQ;
 				INFOPLIST_FILE = "Travelmate 0.2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -657,6 +662,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "saamify.Travelmate-0-2";
 				PRODUCT_NAME = "Travelmate 0.2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

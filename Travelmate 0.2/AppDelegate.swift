@@ -21,9 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = .red
         FirebaseApp.configure()
         
-        let myDatabase = Database.database().reference()
+        //let myDatabase = Database.database().reference()
         
-        myDatabase.setValue("We've Got Some Data!")
+        //myDatabase.setValue("We've Got Some Data!")
         // Override point for customization after application launch.
         
         
