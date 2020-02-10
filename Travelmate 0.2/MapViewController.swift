@@ -16,7 +16,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         modalPresentationStyle = .fullScreen
         // Do any additional setup after loading the view.
-        let camera1 = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         let marker = GMSMarker()
