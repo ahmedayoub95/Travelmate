@@ -216,6 +216,7 @@
 				946113D023341013007B1692 /* Frameworks */,
 				946113D123341013007B1692 /* Resources */,
 				6A45ED372BB399ECAEA14947 /* [CP] Embed Pods Frameworks */,
+				384BF836B5235AF7EC70DC86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +255,7 @@
 				946113EF23341013007B1692 /* Frameworks */,
 				946113F023341013007B1692 /* Resources */,
 				77B6C695460DBC2CFD736ADC /* [CP] Embed Pods Frameworks */,
+				8B49DA5F25EDEB6327D3511C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,6 +365,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		384BF836B5235AF7EC70DC86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travelmate 0.2/Pods-Travelmate 0.2-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travelmate 0.2/Pods-Travelmate 0.2-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Travelmate 0.2/Pods-Travelmate 0.2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		63876FE407F3839A316C0E6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +436,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Travelmate 0.2-Travelmate 0.2UITests/Pods-Travelmate 0.2-Travelmate 0.2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B49DA5F25EDEB6327D3511C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travelmate 0.2-Travelmate 0.2UITests/Pods-Travelmate 0.2-Travelmate 0.2UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travelmate 0.2-Travelmate 0.2UITests/Pods-Travelmate 0.2-Travelmate 0.2UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Travelmate 0.2-Travelmate 0.2UITests/Pods-Travelmate 0.2-Travelmate 0.2UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B0AEEC848762453258A149CD /* [CP] Check Pods Manifest.lock */ = {

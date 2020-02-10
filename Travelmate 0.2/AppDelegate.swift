@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = .black
         UITabBar.appearance().tintColor = .red
         FirebaseApp.configure()
-        
+        GMSServices.provideAPIKey("AIzaSyB6jJ3PClj3eJuLJRHHYNtdGbzi8y-42EY")
+        GMSPlacesClient.provideAPIKey("AIzaSyB6jJ3PClj3eJuLJRHHYNtdGbzi8y-42EY")
         //let myDatabase = Database.database().reference()
         
         //myDatabase.setValue("We've Got Some Data!")
