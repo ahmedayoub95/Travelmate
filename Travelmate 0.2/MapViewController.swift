@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 class MapViewController: UIViewController {
 
@@ -14,6 +16,14 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         modalPresentationStyle = .fullScreen
         // Do any additional setup after loading the view.
+        let camera1 = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
+        marker.map = mapView
     }
 
     
