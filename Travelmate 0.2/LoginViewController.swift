@@ -29,11 +29,10 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user,error) in
             
             if error != nil{
-                print("Error..!!")
-            }else{
-                print("Successfully Logged In..!!")
-                
-                self.performSegue(withIdentifier: "goToTabBarController", sender: self)
+            let alertController = UIAlertController(title: "Invalid details", message: "Please Try-again", preferredStyle: .alert);
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
             }
             
         }
