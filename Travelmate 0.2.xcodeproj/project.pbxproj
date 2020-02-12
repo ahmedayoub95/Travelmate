@@ -26,6 +26,7 @@
 		FA315BBA23DDBC0300956450 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BB923DDBC0300956450 /* SignUpViewController.swift */; };
 		FA315BBE23DEFED700956450 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BBD23DEFED700956450 /* MessagesViewController.swift */; };
 		FA315BC023DEFF8F00956450 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BBF23DEFF8F00956450 /* DashboardViewController.swift */; };
+		FA7F754323F4014300CC0AAB /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F754223F4014300CC0AAB /* EditViewController.swift */; };
 		FA8DECF323DB9D35005882D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8DECF223DB9D35005882D0 /* MapKit.framework */; };
 		FAA0D41723E034E7003DAE11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0D41623E034E7003DAE11 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		FA315BB923DDBC0300956450 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA315BBD23DEFED700956450 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		FA315BBF23DEFF8F00956450 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		FA7F754223F4014300CC0AAB /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		FA8DECF023DB9D0C005882D0 /* Travelmate 0.2Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Travelmate 0.2Release.entitlements"; sourceTree = "<group>"; };
 		FA8DECF223DB9D35005882D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FAA0D41623E034E7003DAE11 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				FAA0D41623E034E7003DAE11 /* LoginViewController.swift */,
 				94953E9E23F17BD700FEDE72 /* PlacesViewController.swift */,
 				94953EA023F1A51700FEDE72 /* Constants.swift */,
+				FA7F754223F4014300CC0AAB /* EditViewController.swift */,
 			);
 			path = "Travelmate 0.2";
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7F754323F4014300CC0AAB /* EditViewController.swift in Sources */,
 				FAA0D41723E034E7003DAE11 /* LoginViewController.swift in Sources */,
 				FA315BBE23DEFED700956450 /* MessagesViewController.swift in Sources */,
 				FA315BC023DEFF8F00956450 /* DashboardViewController.swift in Sources */,
