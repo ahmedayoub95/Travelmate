@@ -381,7 +381,7 @@ Please Login</string>
                                 </state>
                                 <connections>
                                     <action selector="SignInPressed:" destination="dSR-wV-Pbk" eventType="touchUpInside" id="cZM-ik-tqJ"/>
-                                    <segue destination="O2e-Ax-BKH" kind="show" identifier="goToTabBarController" id="7w4-cW-mvw"/>
+                                    <segue destination="O2e-Ax-BKH" kind="show" id="e6s-3T-TOP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hbA-3e-Zj0">
@@ -566,7 +566,7 @@ Please Login</string>
         <!--Map-->
         <scene sceneID="JWk-Ic-yRH">
             <objects>
-                <viewController title="Map" modalPresentationStyle="fullScreen" id="5fa-Pc-cDT" customClass="MapViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapVC" title="Map" modalPresentationStyle="fullScreen" id="5fa-Pc-cDT" customClass="MapViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NuP-5L-8Qi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,7 +583,7 @@ Please Login</string>
         <!--Tab Bar Controller-->
         <scene sceneID="71w-pp-fyT">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="O2e-Ax-BKH" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="O2e-Ax-BKH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="IHo-72-Vtl"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wf9-MR-Vue">
