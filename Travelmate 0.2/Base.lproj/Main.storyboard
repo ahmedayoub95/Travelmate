@@ -471,9 +471,9 @@ Please Login</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLW-fv-A7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="654"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="653.57142857142856"/>
         </scene>
-        <!--Dashboard-->
+        <!--Profile-->
         <scene sceneID="cZq-aA-OQg">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="UoZ-WV-wFr" customClass="DashboardViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -482,12 +482,12 @@ Please Login</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f46-Gm-imP">
-                                <rect key="frame" x="20" y="445" width="374" height="161"/>
+                                <rect key="frame" x="20" y="522" width="374" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9r-oW-ohq">
-                                <rect key="frame" x="20" y="406" width="135" height="30"/>
+                                <rect key="frame" x="20" y="484" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -511,59 +511,73 @@ Please Login</string>
                                     <action selector="SignOutPressed:" destination="UoZ-WV-wFr" eventType="touchUpInside" id="4Vi-kM-PyB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3i-Lb-aiF">
+                                <rect key="frame" x="33" y="433" width="348" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Edit Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="EditProfileOptions:" destination="UoZ-WV-wFr" eventType="touchUpInside" id="FR3-C4-hTM"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrI-sl-CF2">
-                                <rect key="frame" x="20" y="203" width="374" height="163"/>
+                                <rect key="frame" x="20" y="192" width="374" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ahmed Ayoub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07B-t6-Yo7">
-                                        <rect key="frame" x="166" y="30" width="161" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Software Engineer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktF-f1-rwz">
-                                        <rect key="frame" x="166" y="59" width="156" height="23"/>
+                                        <rect key="frame" x="107" y="131" width="156" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2b-hH-vj1">
-                                        <rect key="frame" x="278" y="102" width="49" height="31"/>
+                                        <rect key="frame" x="309" y="173" width="49" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="thumbTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXI-bY-rSx">
-                                        <rect key="frame" x="221" y="107" width="49" height="21"/>
+                                        <rect key="frame" x="252" y="178" width="49" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RiK-Zs-ODX">
-                                        <rect key="frame" x="8" y="30" width="107" height="103"/>
+                                        <rect key="frame" x="132" y="-42" width="107" height="103"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ahmed Ayoub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07B-t6-Yo7">
+                                        <rect key="frame" x="107" y="79" width="161" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4p-qP-IMe">
-                                <rect key="frame" x="143" y="32" width="128" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Jz-lM-9TO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="person.fill" catalog="system" id="f1T-x1-cml"/>
+                    <navigationItem key="navigationItem" title="Profile" largeTitleDisplayMode="always" id="F9O-Db-YJ4"/>
+                    <connections>
+                        <outlet property="CircularImageview" destination="RiK-Zs-ODX" id="qZD-Hy-axb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xya-u4-OlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469.56521739130437" y="1088.1696428571429"/>
+            <point key="canvasLocation" x="1379.7101449275362" y="1088.1696428571429"/>
         </scene>
         <!--Map-->
         <scene sceneID="JWk-Ic-yRH">
@@ -596,12 +610,31 @@ Please Login</string>
                     <connections>
                         <segue destination="5fa-Pc-cDT" kind="relationship" relationship="viewControllers" id="bhp-oN-XaE"/>
                         <segue destination="EGN-Jc-jLr" kind="relationship" relationship="viewControllers" id="azK-ZR-YDf"/>
-                        <segue destination="UoZ-WV-wFr" kind="relationship" relationship="viewControllers" id="0av-Yv-7lu"/>
+                        <segue destination="tpW-w8-KgL" kind="relationship" relationship="viewControllers" id="0av-Yv-7lu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr6-cN-fxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="470" y="331"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="hIK-LC-XgL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tpW-w8-KgL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="person.fill" catalog="system" id="f1T-x1-cml"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="347-tk-VVh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UoZ-WV-wFr" kind="relationship" relationship="rootViewController" id="SjT-Tj-kpP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ZU-D1-2Wk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.56521739130437" y="1088.1696428571429"/>
         </scene>
     </scenes>
     <resources>
