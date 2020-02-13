@@ -11,14 +11,19 @@ import FirebaseAuth
 import Firebase
 
 class DashboardViewController: UIViewController {
-
+ @IBOutlet weak var CircularImageview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
          modalPresentationStyle = .fullScreen
-        // Do any additional setup after loading the view.
+        
+        CircularImageview.layer.cornerRadius = CircularImageview.frame.size.width/2
+        CircularImageview.layer.shadowColor = UIColor.lightGray.cgColor
+        CircularImageview.layer.shadowRadius = 10
+        // Do additional setup after loading the view.
     }
     
 
+   
     /*
     // MARK: - Navigation
 
@@ -29,6 +34,33 @@ class DashboardViewController: UIViewController {
     }
     */
     
+    @IBAction func EditProfileOptions(_ sender: Any) {
+        
+        
+        let actionSheet = UIAlertController(title: "Select Option", message: "", preferredStyle: .actionSheet)
+       // let actionSheet = UIAlertController(nibName: "Select Option",bundle: .actionSheet)
+        
+        let EditAccount = UIAlertAction(title: "My Account", style: .default){ action in
+            
+        }
+        
+        let EditProfile = UIAlertAction(title: "My Profile", style: .default){ action in
+            
+        }
+        let login = UIAlertAction(title: "Logout", style: .destructive) { action in
+            
+            
+        }
+        let Cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        actionSheet.addAction(EditProfile)
+        actionSheet.addAction(EditAccount)
+        actionSheet.addAction(login)
+        actionSheet.addAction(Cancel)
+        
+        present(actionSheet,animated: true, completion: nil)
+        
+    }
     
     @IBAction func SignOutPressed(_ sender: UIButton) {
         
