@@ -162,7 +162,7 @@ Please Login</string>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="R7j-DC-HEG">
                                 <rect key="frame" x="25" y="586" width="365" height="8"/>
@@ -179,7 +179,7 @@ Please Login</string>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="By signing up you agree with our term of services and privacy policy" textAlignment="justified" minimumFontSize="17" id="98w-l8-Xa0">
                                 <rect key="frame" x="28" y="786" width="372" height="34"/>
@@ -308,7 +308,7 @@ Please Login</string>
         <!--Login-->
         <scene sceneID="hUa-le-q5h">
             <objects>
-                <viewController title="Login" modalPresentationStyle="fullScreen" id="dSR-wV-Pbk" customClass="LoginViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" title="Login" modalPresentationStyle="fullScreen" id="dSR-wV-Pbk" customClass="LoginViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="57R-Dk-YZL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -555,13 +555,6 @@ Please Login</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIa-G8-B3J">
-                                <rect key="frame" x="324" y="32" width="90" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Edit" id="3bu-Bq-jJ3"/>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Jz-lM-9TO"/>
