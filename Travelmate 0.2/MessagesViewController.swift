@@ -17,6 +17,8 @@ class MessagesViewController: UIViewController {
     }
     
 
+
+    @IBOutlet var chatOutlet: UITableView!
     /*
     // MARK: - Navigation
 
