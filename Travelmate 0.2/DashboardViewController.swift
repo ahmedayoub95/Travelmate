@@ -10,8 +10,8 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class DashboardViewController: UIViewController {
- @IBOutlet weak var CircularImageview: UIImageView!
+class DashboardViewController: UIViewController{
+    @IBOutlet weak var CircularImageview: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
          modalPresentationStyle = .fullScreen
@@ -44,8 +44,13 @@ class DashboardViewController: UIViewController {
             
         }
         
-        let EditProfile = UIAlertAction(title: "My Profile", style: .default){ action in
+        let EditProfile = UIAlertAction(title: "Edit Profile", style: .default) { (action) in
             
+            print("EDit Profile")
+          //  self.transitionToHome()
+            //self.performSegue(withIdentifier: "EditProfileVC", sender: Any?.self)
+            //let viewController = EditViewController()
+            //self.navigationController?.pushViewController(viewController, animated: true)
         }
         let login = UIAlertAction(title: "Logout", style: .destructive) { action in
             
@@ -62,18 +67,28 @@ class DashboardViewController: UIViewController {
         
     }
     
+    func okHandler(alert: UIAlertAction!) {
+        let viewController = EditViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    
     @IBAction func SignOutPressed(_ sender: UIButton) {
         
         do{
             try Auth.auth().signOut()
-
-           
             navigationController?.popToRootViewController(animated: true)
         }catch{
             print("Error! Signing out")
         }
     }
     
+    func transitionToHome() {
+    let  editprofileviewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.EditViewController) as? EditViewController
+    
+    view.window?.rootViewController = editprofileviewController
+    view.window?.makeKeyAndVisible()
+    }
     
     
     

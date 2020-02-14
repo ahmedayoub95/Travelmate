@@ -13,6 +13,7 @@ struct Constants {
         
         static let LoginViewController = "LoginVC"
         static let MapViewController = "MapVC"
+        static let EditViewController = "EditProfileVC"
         
     }
 }

@@ -33,10 +33,12 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { (user,error) in
             
             if error != nil{
+                
                 let alertController = UIAlertController(title: "Invalid details", message: "Please Try-again", preferredStyle: .alert);
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 alertController.addAction(defaultAction)
                 self.present(alertController, animated: true, completion: nil)
+                
             }else{
                 let alertController = UIAlertController(title: "Welcome To", message: "TravelMate", preferredStyle: .alert);
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
