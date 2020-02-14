@@ -83,6 +83,7 @@ class DashboardViewController: UIViewController{
         
         do{
             try Auth.auth().signOut()
+            //let loginviewController = LoginViewController()
             navigationController?.popToRootViewController(animated: true)
         }catch{
             print("Error! Signing out")

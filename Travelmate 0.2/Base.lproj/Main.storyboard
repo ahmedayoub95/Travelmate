@@ -437,35 +437,6 @@ Please Login</string>
             </objects>
             <point key="canvasLocation" x="-1104.3478260869565" y="419.86607142857139"/>
         </scene>
-        <!--Chat-->
-        <scene sceneID="mf2-Ua-qfA">
-            <objects>
-                <tableViewController title="Chat" id="EGN-Jc-jLr" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XLg-EC-1sI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="rph-S2-Hpm">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rph-S2-Hpm" id="q1o-32-cwf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="EGN-Jc-jLr" id="Ecx-vq-5pn"/>
-                            <outlet property="delegate" destination="EGN-Jc-jLr" id="ZyD-Zw-jwX"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Messages" image="message.fill" catalog="system" id="Jai-QY-Ubt"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tLW-fv-A7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1741" y="441"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="cZq-aA-OQg">
             <objects>
@@ -891,7 +862,6 @@ Please Login</string>
                     </tabBar>
                     <connections>
                         <segue destination="5fa-Pc-cDT" kind="relationship" relationship="viewControllers" id="bhp-oN-XaE"/>
-                        <segue destination="EGN-Jc-jLr" kind="relationship" relationship="viewControllers" id="azK-ZR-YDf"/>
                         <segue destination="yeS-yh-N1o" kind="relationship" relationship="viewControllers" id="zEe-r1-uEW"/>
                     </connections>
                 </tabBarController>
@@ -910,6 +880,9 @@ Please Login</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.26832941170000002" green="0.36823296550000001" blue="0.53379082680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.63400453329999995" green="0.21114256980000001" blue="0.3639119267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -928,7 +901,6 @@ Please Login</string>
         <image name="location.fill" catalog="system" width="64" height="56"/>
         <image name="login background image" width="457" height="812"/>
         <image name="logo" width="73" height="49"/>
-        <image name="message.fill" catalog="system" width="64" height="56"/>
         <image name="person" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
