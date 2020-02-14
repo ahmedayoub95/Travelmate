@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = .black
         UITabBar.appearance().tintColor = .red
         FirebaseApp.configure()
-        GMSServices.provideAPIKey("AIzaSyB6jJ3PClj3eJuLJRHHYNtdGbzi8y-42EY")
-        GMSPlacesClient.provideAPIKey("AIzaSyB6jJ3PClj3eJuLJRHHYNtdGbzi8y-42EY")
+        GMSServices.provideAPIKey("AIzaSyDAmy3aX6maEC5_FQ-pK25sW_j5dWXFinA")
+        GMSPlacesClient.provideAPIKey("AIzaSyDAmy3aX6maEC5_FQ-pK25sW_j5dWXFinA")
         //let myDatabase = Database.database().reference()
         
         //myDatabase.setValue("We've Got Some Data!")
