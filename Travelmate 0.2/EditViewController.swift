@@ -27,7 +27,8 @@ class EditViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // modalPresentationStyle = .fullScreen
+        self.navigationItem.leftItemsSupplementBackButton = true
         // Do any additional setup after loading the view.
     }
     
@@ -53,8 +54,9 @@ class EditViewController: UIViewController {
         
        // db.collection("users").addDocument(data: ["name" : name, "phone":email , "uid": AuthDataResult?.user.uid]){(error) in
         
-       // db.collection("users").addDocument(data: ["name" : name, "phone":email , "uid": AuthDataResult?.user.uid]) 
-        db.collection("users").addDocument(data: ["name" : name, "age":email,"location": location,"gender": gender,"interest":interest,"occupation": occupation , "uid": userID!]){(error) in
+       // db.collection("users").addDocument(data: ["name" : name, "phone":email , "uid": AuthDataResult?.user.uid])
+        if user != nil{
+            db.collection("users").addDocument(data: ["name" : name, "age":email,"location": location,"gender": gender,"interest":interest,"occupation": occupation , "uid": userID!]){(error) in
             
             if error != nil{
                 
@@ -63,6 +65,7 @@ class EditViewController: UIViewController {
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 alertController.addAction(defaultAction)
                self.present(alertController, animated: true, completion: nil)
+            }
             }
             
         }

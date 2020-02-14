@@ -12,6 +12,9 @@ import Firebase
 
 class DashboardViewController: UIViewController{
     @IBOutlet weak var CircularImageview: UIImageView!
+        @IBOutlet weak var ViewUserDetails: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          modalPresentationStyle = .fullScreen
@@ -19,11 +22,14 @@ class DashboardViewController: UIViewController{
         CircularImageview.layer.cornerRadius = CircularImageview.frame.size.width/2
         CircularImageview.layer.shadowColor = UIColor.lightGray.cgColor
         CircularImageview.layer.shadowRadius = 10
+        
+        
         // Do additional setup after loading the view.
     }
     
 
-   
+
+    
     /*
     // MARK: - Navigation
 
