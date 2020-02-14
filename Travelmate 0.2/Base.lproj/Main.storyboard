@@ -81,7 +81,7 @@ Please Login</string>
         <scene sceneID="rOj-M3-OwI">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="cxq-Ng-7tK" customClass="SignUpViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="qbi-x3-qQc">
+                    <view key="view" contentMode="scaleToFill" id="qbi-x3-qQc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -131,7 +131,7 @@ Please Login</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" id="X77-61-CuQ">
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" id="X77-61-CuQ">
                                 <rect key="frame" x="28" y="488" width="362" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -141,7 +141,7 @@ Please Login</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="TzP-PU-kjm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="TzP-PU-kjm">
                                 <rect key="frame" x="26" y="521" width="364" height="8"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="CMg-Kf-9dV"/>
@@ -231,7 +231,7 @@ Please Login</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Line 1" id="8HY-tS-jKz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line 1" id="8HY-tS-jKz">
                                 <rect key="frame" x="29" y="458" width="361" height="8"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -436,6 +436,36 @@ Please Login</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Cu-3B-KhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1104.3478260869565" y="419.86607142857139"/>
+        </scene>
+        <!--Messages View Controller-->
+        <scene sceneID="UOj-H5-joq">
+            <objects>
+                <viewController id="9yf-Ji-H2q" customClass="MessagesViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QoI-tz-2HT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-5c-Vz8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QoI-tz-2HT" id="KoC-li-ydh"/>
+                                    <outlet property="delegate" destination="QoI-tz-2HT" id="iW4-ib-t3j"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vds-FR-Aan"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="u9I-ZZ-o6b"/>
+                    <connections>
+                        <outlet property="chatOutlet" destination="ezU-5c-Vz8" id="7bw-Q6-LXK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qsi-XK-Sd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2842.0289855072465" y="474.77678571428567"/>
         </scene>
         <!--Profile-->
         <scene sceneID="cZq-aA-OQg">
@@ -743,7 +773,7 @@ Please Login</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQM-X5-Tzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3560.8695652173915" y="1099.5535714285713"/>
+            <point key="canvasLocation" x="4471.0144927536239" y="1099.5535714285713"/>
         </scene>
         <!--Account-->
         <scene sceneID="yEr-JM-Kvw">
@@ -862,6 +892,7 @@ Please Login</string>
                     </tabBar>
                     <connections>
                         <segue destination="5fa-Pc-cDT" kind="relationship" relationship="viewControllers" id="bhp-oN-XaE"/>
+                        <segue destination="wP7-dv-YrQ" kind="relationship" relationship="viewControllers" id="rto-iA-nwJ"/>
                         <segue destination="yeS-yh-N1o" kind="relationship" relationship="viewControllers" id="zEe-r1-uEW"/>
                     </connections>
                 </tabBarController>
@@ -892,6 +923,26 @@ Please Login</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5I8-E4-FKn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="469.56521739130437" y="1099.5535714285713"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Sfo-pe-MsU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wP7-dv-YrQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="diC-Js-gMh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2bF-TD-ibY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.5450980392" green="0.21176470589999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9yf-Ji-H2q" kind="relationship" relationship="rootViewController" id="TSU-CE-myo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgM-ki-wv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931.8840579710147" y="474.77678571428567"/>
         </scene>
     </scenes>
     <resources>

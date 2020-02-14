@@ -17,6 +17,8 @@
 		946113E123341013007B1692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946113DF23341013007B1692 /* LaunchScreen.storyboard */; };
 		946113EC23341013007B1692 /* Travelmate_0_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946113EB23341013007B1692 /* Travelmate_0_2Tests.swift */; };
 		946113F723341013007B1692 /* Travelmate_0_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946113F623341013007B1692 /* Travelmate_0_2UITests.swift */; };
+		9494B02923F72A2300E8347C /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9494B02823F72A2300E8347C /* MessageCell.xib */; };
+		9494B02B23F72D4500E8347C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9494B02A23F72D4500E8347C /* CustomCell.swift */; };
 		94953E9F23F17BD700FEDE72 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94953E9E23F17BD700FEDE72 /* PlacesViewController.swift */; };
 		94953EA123F1A51700FEDE72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94953EA023F1A51700FEDE72 /* Constants.swift */; };
 		94B8FF2923394707007998C0 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 94B8FF2823394707007998C0 /* video1.mp4 */; };
@@ -68,6 +70,8 @@
 		946113F223341013007B1692 /* Travelmate 0.2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travelmate 0.2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		946113F623341013007B1692 /* Travelmate_0_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travelmate_0_2UITests.swift; sourceTree = "<group>"; };
 		946113F823341013007B1692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9494B02823F72A2300E8347C /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		9494B02A23F72D4500E8347C /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		94953E9E23F17BD700FEDE72 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		94953EA023F1A51700FEDE72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		94B8FF2823394707007998C0 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		946113D523341013007B1692 /* Travelmate 0.2 */ = {
 			isa = PBXGroup;
 			children = (
+				9494B02723F729F800E8347C /* Custom Cell */,
 				FA8DECF023DB9D0C005882D0 /* Travelmate 0.2Release.entitlements */,
 				94B8FF2823394707007998C0 /* video1.mp4 */,
 				946113D623341013007B1692 /* AppDelegate.swift */,
@@ -186,6 +191,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9494B02723F729F800E8347C /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9494B02823F72A2300E8347C /* MessageCell.xib */,
+				9494B02A23F72D4500E8347C /* CustomCell.swift */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		A4CC1B489D12AC853A81737C /* Pods */ = {
@@ -328,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				946113E123341013007B1692 /* LaunchScreen.storyboard in Resources */,
+				9494B02923F72A2300E8347C /* MessageCell.xib in Resources */,
 				94B8FF2923394707007998C0 /* video1.mp4 in Resources */,
 				FA315BB823DCF2B100956450 /* GoogleService-Info.plist in Resources */,
 				946113DE23341013007B1692 /* Assets.xcassets in Resources */,
@@ -495,6 +510,7 @@
 			files = (
 				FA7F754323F4014300CC0AAB /* EditViewController.swift in Sources */,
 				FAA0D41723E034E7003DAE11 /* LoginViewController.swift in Sources */,
+				9494B02B23F72D4500E8347C /* CustomCell.swift in Sources */,
 				FA315BBE23DEFED700956450 /* MessagesViewController.swift in Sources */,
 				FA315BC023DEFF8F00956450 /* DashboardViewController.swift in Sources */,
 				946113D923341013007B1692 /* ViewController.swift in Sources */,
