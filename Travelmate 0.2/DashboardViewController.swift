@@ -79,22 +79,28 @@ class DashboardViewController: UIViewController{
         
     }
     
-    @IBAction func SignOutPressed(_ sender: UIButton) {
-        
+  
+    @IBAction func SignOutPressed(_ sender: Any) {
         do{
-            try Auth.auth().signOut()
-            //let loginviewController = LoginViewController()
-            navigationController?.popToRootViewController(animated: true)
-        }catch{
-            print("Error! Signing out")
-        }
+                try Auth.auth().signOut()
+               // let loginviewController = LoginViewController()
+//        let viewController = LoginViewController()
+//        self.navigationController?.pushViewController(viewController, animated: true)
+            self.transitionToHome()
+            }catch{
+                print("Error! Signing out")
+            }
     }
     
-    func transitionToHome() {
-    let  editprofileviewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.EditViewController) as? EditViewController
+        
+        
     
-    view.window?.rootViewController = editprofileviewController
-    view.window?.makeKeyAndVisible()
+    
+    func transitionToHome() {
+        let  loginviewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.LoginViewController) as? LoginViewController
+        
+        view.window?.rootViewController = loginviewController
+        view.window?.makeKeyAndVisible()
     }
     
     
