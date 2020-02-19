@@ -49,6 +49,7 @@ class SignUpViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         } else{
             
+            
             // create a new user in your database
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (AuthDataResult, Error) in
                 

@@ -14,6 +14,7 @@ class DashboardViewController: UIViewController{
     @IBOutlet weak var CircularImageview: UIImageView!
         @IBOutlet weak var ViewUserDetails: UIView!
     
+    @IBOutlet weak var userNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,56 +23,89 @@ class DashboardViewController: UIViewController{
         CircularImageview.layer.cornerRadius = CircularImageview.frame.size.width/2
         CircularImageview.layer.shadowColor = UIColor.lightGray.cgColor
         CircularImageview.layer.shadowRadius = 10
+        checkIfUserIsLoggedIn()
         
         
         // Do additional setup after loading the view.
     }
     
-
-
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func checkIfUserIsLoggedIn(){
+        if Auth.auth().currentUser?.uid != nil{
+            let uid = Auth.auth().currentUser?.uid
+            Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value ,with: { (snapshot) in
+                if let dictionary = snapshot.value as? [String?: AnyObject]{
+                    self.userNameLabel.text = dictionary["name"] as? String
+                }
+                })
+        }
     }
-    */
+
+
     
-    @IBAction func EditProfileOptions(_ sender: Any) {
-        
-        
+    
+    @IBAction func ActionsheetOptions(_ sender: Any) {
         let actionSheet = UIAlertController(title: "Select Option", message: "", preferredStyle: .actionSheet)
-       // let actionSheet = UIAlertController(nibName: "Select Option",bundle: .actionSheet)
-        
-        let EditAccount = UIAlertAction(title: "My Account", style: .default){ action in
-            
-        }
-        
-        let EditProfile = UIAlertAction(title: "Edit Profile", style: .default) { (action) in
-            
-            print("EDit Profile")
-          //  self.transitionToHome()
-            //self.performSegue(withIdentifier: "EditProfileVC", sender: Any?.self)
-            //let viewController = EditViewController()
-            //self.navigationController?.pushViewController(viewController, animated: true)
-        }
-        let login = UIAlertAction(title: "Logout", style: .destructive) { action in
-            
-            
-        }
-        let Cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        
-        actionSheet.addAction(EditProfile)
-        actionSheet.addAction(EditAccount)
-        actionSheet.addAction(login)
-        actionSheet.addAction(Cancel)
-        
-        present(actionSheet,animated: true, completion: nil)
-        
+        // let actionSheet = UIAlertController(nibName: "Select Option",bundle: .actionSheet)
+         
+         let EditAccount = UIAlertAction(title: "My Account", style: .default){ action in
+             
+         }
+         
+         let EditProfile = UIAlertAction(title: "Edit Profile", style: .default) { (action) in
+             
+             print("EDit Profile")
+           //  self.transitionToHome()
+             //self.performSegue(withIdentifier: "EditProfileVC", sender: Any?.self)
+             //let viewController = EditViewController()
+             //self.navigationController?.pushViewController(viewController, animated: true)
+         }
+         let login = UIAlertAction(title: "Logout", style: .destructive) { action in
+             
+             
+         }
+         let Cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+         
+         actionSheet.addAction(EditProfile)
+         actionSheet.addAction(EditAccount)
+         actionSheet.addAction(login)
+         actionSheet.addAction(Cancel)
+         
+         present(actionSheet,animated: true, completion: nil)
+         
     }
+    
+//    @IBAction func EditProfileOptions(_ sender: Any) {
+//        
+//        
+//        let actionSheet = UIAlertController(title: "Select Option", message: "", preferredStyle: .actionSheet)
+//       // let actionSheet = UIAlertController(nibName: "Select Option",bundle: .actionSheet)
+//        
+//        let EditAccount = UIAlertAction(title: "My Account", style: .default){ action in
+//            
+//        }
+//        
+//        let EditProfile = UIAlertAction(title: "Edit Profile", style: .default) { (action) in
+//            
+//            print("EDit Profile")
+//          //  self.transitionToHome()
+//            //self.performSegue(withIdentifier: "EditProfileVC", sender: Any?.self)
+//            //let viewController = EditViewController()
+//            //self.navigationController?.pushViewController(viewController, animated: true)
+//        }
+//        let login = UIAlertAction(title: "Logout", style: .destructive) { action in
+//            
+//            
+//        }
+//        let Cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//        
+//        actionSheet.addAction(EditProfile)
+//        actionSheet.addAction(EditAccount)
+//        actionSheet.addAction(login)
+//        actionSheet.addAction(Cancel)
+//        
+//        present(actionSheet,animated: true, completion: nil)
+//        
+//    }
     
     func okHandler(alert: UIAlertAction!) {
         let viewController = EditViewController()

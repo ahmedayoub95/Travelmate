@@ -7,26 +7,48 @@
 //
 
 import UIKit
-
-class MessagesViewController: UIViewController {
+import Firebase
+import FirebaseAuth
+class MessagesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         modalPresentationStyle = .fullScreen
+        checkIfUserIsLoggedIn()
         // Do any additional setup after loading the view.
+         let image = UIImage(named: "new_message_icon")
+               navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleNewMessage))
+    }
+    
+    @objc func handleNewMessage() {
+        let newMessageController = NewMessageController()
+       
+       let navController = UINavigationController(rootViewController: newMessageController)
+        present(navController, animated: true, completion: nil)
+    }
+    
+    func checkIfUserIsLoggedIn() {
+        if Auth.auth().currentUser?.uid != nil {
+    
+            let uid = Auth.auth().currentUser?.uid
+            Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                
+                if let dictionary = snapshot.value as? [String: AnyObject] {
+                                   self.navigationItem.title = dictionary["name"] as? String
+                               }
+                
+                }, withCancel: nil)
+        }
     }
     
 
 
     @IBOutlet var chatOutlet: UITableView!
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
+    
+    
+    
+    
+    
 
 }

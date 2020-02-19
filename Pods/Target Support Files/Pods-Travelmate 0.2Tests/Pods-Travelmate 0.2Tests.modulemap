@@ -1,0 +1,6 @@
+framework module Pods_Travelmate_0_2Tests {
+  umbrella header "Pods-Travelmate 0.2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

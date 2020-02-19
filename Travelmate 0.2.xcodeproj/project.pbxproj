@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		05E20AF5FE49D1D0ABA7ADCE /* Pods_Travelmate_0_2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62A0DFD14E1901ED1851D6A /* Pods_Travelmate_0_2Tests.framework */; };
 		4BD89C4A26901882AE32E565 /* Pods_Travelmate_0_2_Travelmate_0_2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73FE3EAEBDD9FB6E052808E /* Pods_Travelmate_0_2_Travelmate_0_2UITests.framework */; };
-		5F57A1D0F5856777E8A745D9 /* Pods_Travelmate_0_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F210FAB8EA3B1D3558D94D7 /* Pods_Travelmate_0_2.framework */; };
 		946113D723341013007B1692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946113D623341013007B1692 /* AppDelegate.swift */; };
 		946113D923341013007B1692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946113D823341013007B1692 /* ViewController.swift */; };
 		946113DC23341013007B1692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946113DA23341013007B1692 /* Main.storyboard */; };
@@ -22,13 +21,19 @@
 		94953E9F23F17BD700FEDE72 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94953E9E23F17BD700FEDE72 /* PlacesViewController.swift */; };
 		94953EA123F1A51700FEDE72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94953EA023F1A51700FEDE72 /* Constants.swift */; };
 		94B8FF2923394707007998C0 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 94B8FF2823394707007998C0 /* video1.mp4 */; };
-		FA1CE8D723EDB737005197AA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1CE8D623EDB737005197AA /* ExternalAccessory.framework */; };
 		FA315BB423DC354400956450 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BB323DC354400956450 /* MapViewController.swift */; };
 		FA315BB823DCF2B100956450 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA315BB723DCF2B100956450 /* GoogleService-Info.plist */; };
 		FA315BBA23DDBC0300956450 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BB923DDBC0300956450 /* SignUpViewController.swift */; };
 		FA315BBE23DEFED700956450 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BBD23DEFED700956450 /* MessagesViewController.swift */; };
 		FA315BC023DEFF8F00956450 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA315BBF23DEFF8F00956450 /* DashboardViewController.swift */; };
 		FA7F754323F4014300CC0AAB /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F754223F4014300CC0AAB /* EditViewController.swift */; };
+		FA7F754723FC489F00CC0AAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F754623FC489E00CC0AAB /* HomeViewController.swift */; };
+		FA7F754B23FC6B0900CC0AAB /* Pods_Travelmate_0_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F210FAB8EA3B1D3558D94D7 /* Pods_Travelmate_0_2.framework */; };
+		FA7F755023FC765800CC0AAB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F754F23FC765800CC0AAB /* APIManager.swift */; };
+		FA7F755423FCB42C00CC0AAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F755323FCB42C00CC0AAB /* User.swift */; };
+		FA7F755623FCB8B600CC0AAB /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F755523FCB8B600CC0AAB /* NewMessageController.swift */; };
+		FA7F755823FCBA1700CC0AAB /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F755723FCBA1700CC0AAB /* MessageController.swift */; };
+		FA7F755923FD42C100CC0AAB /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1CE8D623EDB737005197AA /* ExternalAccessory.framework */; };
 		FA8DECF323DB9D35005882D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8DECF223DB9D35005882D0 /* MapKit.framework */; };
 		FAA0D41723E034E7003DAE11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0D41623E034E7003DAE11 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +90,11 @@
 		FA315BBD23DEFED700956450 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		FA315BBF23DEFF8F00956450 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		FA7F754223F4014300CC0AAB /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		FA7F754623FC489E00CC0AAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA7F754F23FC765800CC0AAB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FA7F755323FCB42C00CC0AAB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA7F755523FCB8B600CC0AAB /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		FA7F755723FCBA1700CC0AAB /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		FA8DECF023DB9D0C005882D0 /* Travelmate 0.2Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Travelmate 0.2Release.entitlements"; sourceTree = "<group>"; };
 		FA8DECF223DB9D35005882D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FAA0D41623E034E7003DAE11 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -95,9 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1CE8D723EDB737005197AA /* ExternalAccessory.framework in Frameworks */,
+				FA7F755923FD42C100CC0AAB /* ExternalAccessory.framework in Frameworks */,
 				FA8DECF323DB9D35005882D0 /* MapKit.framework in Frameworks */,
-				5F57A1D0F5856777E8A745D9 /* Pods_Travelmate_0_2.framework in Frameworks */,
+				FA7F754B23FC6B0900CC0AAB /* Pods_Travelmate_0_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +174,11 @@
 				94953E9E23F17BD700FEDE72 /* PlacesViewController.swift */,
 				94953EA023F1A51700FEDE72 /* Constants.swift */,
 				FA7F754223F4014300CC0AAB /* EditViewController.swift */,
+				FA7F754623FC489E00CC0AAB /* HomeViewController.swift */,
+				FA7F754F23FC765800CC0AAB /* APIManager.swift */,
+				FA7F755323FCB42C00CC0AAB /* User.swift */,
+				FA7F755523FCB8B600CC0AAB /* NewMessageController.swift */,
+				FA7F755723FCBA1700CC0AAB /* MessageController.swift */,
 			);
 			path = "Travelmate 0.2";
 			sourceTree = "<group>";
@@ -516,9 +531,14 @@
 				946113D923341013007B1692 /* ViewController.swift in Sources */,
 				94953E9F23F17BD700FEDE72 /* PlacesViewController.swift in Sources */,
 				FA315BB423DC354400956450 /* MapViewController.swift in Sources */,
+				FA7F755423FCB42C00CC0AAB /* User.swift in Sources */,
 				FA315BBA23DDBC0300956450 /* SignUpViewController.swift in Sources */,
 				946113D723341013007B1692 /* AppDelegate.swift in Sources */,
+				FA7F755823FCBA1700CC0AAB /* MessageController.swift in Sources */,
+				FA7F755623FCB8B600CC0AAB /* NewMessageController.swift in Sources */,
+				FA7F755023FC765800CC0AAB /* APIManager.swift in Sources */,
 				94953EA123F1A51700FEDE72 /* Constants.swift in Sources */,
+				FA7F754723FC489F00CC0AAB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ExternalAccessory.framework ../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework";
 				DEVELOPMENT_TEAM = 498DPLG3BQ;
 				INFOPLIST_FILE = "Travelmate 0.2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -717,6 +738,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Travelmate 0.2/Travelmate 0.2Release.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ExternalAccessory.framework ../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework";
 				DEVELOPMENT_TEAM = 498DPLG3BQ;
 				INFOPLIST_FILE = "Travelmate 0.2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
