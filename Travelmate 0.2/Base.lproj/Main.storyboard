@@ -378,6 +378,7 @@ Please Login</string>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SignInPressed:" destination="dSR-wV-Pbk" eventType="touchUpInside" id="cZM-ik-tqJ"/>
+                                    <segue destination="O2e-Ax-BKH" kind="show" id="AcD-IJ-YIN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hbA-3e-Zj0">
@@ -445,7 +446,7 @@ Please Login</string>
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="UoZ-WV-wFr" customClass="DashboardViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kGE-0p-TZB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login background image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cgl-nr-0vF">
@@ -578,7 +579,7 @@ Please Login</string>
             <objects>
                 <viewController storyboardIdentifier="EditProfileVC" id="bDA-q0-WOS" customClass="EditViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPx-sg-4h9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login background image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKY-QC-qT5">
@@ -762,7 +763,7 @@ Please Login</string>
             <objects>
                 <viewController id="Atj-xC-Vqn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZZG-RH-9zj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login background image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKP-xx-NPu">
@@ -849,7 +850,7 @@ Please Login</string>
             <objects>
                 <viewController id="1eJ-HM-GOR" customClass="HomeViewController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OWD-YM-jHB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFb-rG-NQc">
@@ -986,7 +987,7 @@ Please Login</string>
                     <tabBarItem key="tabBarItem" title="Dashboard" image="person" catalog="system" id="7q7-Po-kM2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="ZjN-0h-yyQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.26832941170000002" green="0.36823296550000001" blue="0.53379082680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.63400453329999995" green="0.21114256980000001" blue="0.3639119267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1006,12 +1007,11 @@ Please Login</string>
         <!--Chat-->
         <scene sceneID="Sfo-pe-MsU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qgM-ki-wv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wP7-dv-YrQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Chat" image="message" catalog="system" id="diC-Js-gMh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2bF-TD-ibY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -1023,6 +1023,7 @@ Please Login</string>
                         <segue destination="wgf-nJ-4Hy" kind="relationship" relationship="rootViewController" id="Gob-1C-e4F"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgM-ki-wv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1741" y="450"/>
         </scene>
@@ -1031,7 +1032,7 @@ Please Login</string>
             <objects>
                 <tableViewController id="wgf-nJ-4Hy" customClass="MessageController" customModule="Travelmate_0_2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="75R-ff-ICH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -1062,7 +1063,7 @@ Please Login</string>
                     <tabBarItem key="tabBarItem" title="" image="cloud" catalog="system" id="u6F-3c-iLU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wk9-81-hvh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
